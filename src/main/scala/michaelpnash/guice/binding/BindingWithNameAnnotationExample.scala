@@ -20,7 +20,8 @@ object BindingWithNameAnnotationExample extends App {
   }
 
   val injector = Guice.createInjector(new ScalaModule)
-  val barComponent = injector.getInstance(classOf[MyBarComponent])
+
+  val barComponent: MyBarComponent = injector.getInstance(classOf[MyBarComponent])
   val fooComponent = injector.getInstance(classOf[MyFooComponent])
   assertEquals("bar", barComponent.callTheService)
   assertEquals("foo", fooComponent.callTheService)

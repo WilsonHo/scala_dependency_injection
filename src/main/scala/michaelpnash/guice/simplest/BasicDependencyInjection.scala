@@ -1,6 +1,6 @@
 package michaelpnash.guice.simplest
 
-import com.google.inject.{AbstractModule, Guice}
+import com.google.inject.{AbstractModule, Guice, Injector}
 import michaelpnash.guice.AService
 import michaelpnash.guice.Utils._
 
@@ -24,11 +24,11 @@ object BasicDependencyInjection extends App {
     }
   }
 
-  val injector = Guice.createInjector(new ScalaModule)
-  val component = injector.getInstance(classOf[MyComponent])
+  val injector: Injector = Guice.createInjector(new ScalaModule)
+  val component: MyComponent = injector.getInstance(classOf[MyComponent])
   assertEquals("someService", component.callTheService)
 
   val injector2 = Guice.createInjector(new ScalaModule2)
-  val component2 = injector2.getInstance(classOf[MyComponent])
+  val component2: MyComponent = injector2.getInstance(classOf[MyComponent])
   assertEquals("someOtherService", component2.callTheService)
 }

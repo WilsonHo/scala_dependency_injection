@@ -3,10 +3,12 @@ package michaelpnash.guice.singleton
 import com.google.inject.{AbstractModule, Guice}
 import michaelpnash.guice.AService
 import michaelpnash.guice.Utils._
+
 /**
   * Created by wilson on 3/29/17.
   */
-object SingletonOrPrototype extends  App{
+object SingletonOrPrototype extends App {
+
   class ScalaModuleSingleton extends AbstractModule {
     @Override
     protected def configure() {
@@ -18,6 +20,13 @@ object SingletonOrPrototype extends  App{
     @Override
     protected def configure() {
       bind(classOf[AService]).to(classOf[NonSingletonService])
+    }
+  }
+
+  class ScalaModuleClassSingleton extends AbstractModule {
+    @Override
+    protected def configure() {
+      bind(classOf[AService]).to(classOf[SingletonClassService])
     }
   }
 
@@ -35,9 +44,9 @@ object SingletonOrPrototype extends  App{
   assertNotSame(nonsingleton, secondNonSingletonInstance)
 
 
-  val singletonInjector1 = Guice.createInjector(new ScalaModuleSingleton)
+  val singletonInjector1 = Guice.createInjector(new ScalaModuleClassSingleton)
   val singletonClass = singletonInjector1.getInstance(classOf[AService])
-  assertEquals("singleton", singletonClass.service)
+  assertEquals("singletonClass", singletonClass.service)
   val secondInstanceClass = singletonInjector1.getInstance(classOf[AService])
   assertSame(singletonClass, secondInstanceClass)
 }
