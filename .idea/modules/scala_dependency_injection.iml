@@ -18,28 +18,90 @@
       <sourceFolder url="file://$MODULE_DIR$/../../src/test/resources" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../../target/scala-2.11/resource_managed/test" type="java-test-resource" />
       <excludeFolder url="file://$MODULE_DIR$/../../target" />
+      <excludeFolder url="file://$MODULE_DIR$/../../target/embeddedCassandra" />
       <excludeFolder url="file://$MODULE_DIR$/../../target/resolution-cache" />
       <excludeFolder url="file://$MODULE_DIR$/../../target/scala-2.12" />
       <excludeFolder url="file://$MODULE_DIR$/../../target/streams" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="SBT: org.slf4j:slf4j-api:1.7.2:jar" level="project" />
     <orderEntry type="library" name="SBT: com.orange.redis-embedded:embedded-redis:0.5:jar" level="project" />
-    <orderEntry type="library" name="SBT: commons-pool:commons-pool:1.6:jar" level="project" />
-    <orderEntry type="library" name="SBT: javax.inject:javax.inject:1:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.google.inject:guice:4.1.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.google.guava:guava:19.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: aopalliance:aopalliance:1.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: junit:junit:4.12:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.hamcrest:hamcrest-core:1.3:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.typesafe:config:1.2.1:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.typesafe.akka:akka-actor_2.11:2.3.6:jar" level="project" />
-    <orderEntry type="library" name="SBT: net.debasishg:redisclient_2.11:3.4:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.scala-lang:scala-library:2.11.8:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.scala-lang:scala-reflect:2.11.8:jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="SBT: org.scala-lang.modules:scala-xml_2.11:1.0.2:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.scalactic:scalactic_2.11:2.2.4:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.slf4j:slf4j-api:1.7.12:jar" level="project" />
     <orderEntry type="library" scope="TEST" name="SBT: org.scalatest:scalatest_2.11:2.2.4:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="SBT: org.scala-lang.modules:scala-xml_2.11:1.0.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: joda-time:joda-time:2.4:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.typesafe.akka:akka-actor_2.11:2.3.6:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.typesafe:config:1.2.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.ow2.asm:asm-util:5.0.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.ow2.asm:asm-tree:5.0.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.ow2.asm:asm-commons:5.0.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.ow2.asm:asm-analysis:5.0.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.ow2.asm:asm:5.0.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: io.netty:netty-transport:4.0.44.Final:jar" level="project" />
+    <orderEntry type="library" name="SBT: io.netty:netty-handler:4.0.44.Final:jar" level="project" />
+    <orderEntry type="library" name="SBT: io.netty:netty-common:4.0.44.Final:jar" level="project" />
+    <orderEntry type="library" name="SBT: io.netty:netty-codec:4.0.44.Final:jar" level="project" />
+    <orderEntry type="library" name="SBT: io.netty:netty-buffer:4.0.44.Final:jar" level="project" />
+    <orderEntry type="library" name="SBT: io.dropwizard.metrics:metrics-core:3.1.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.github.jnr:jnr-x86asm:1.0.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.github.jnr:jnr-posix:3.0.27:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.github.jnr:jnr-ffi:2.0.7:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.github.jnr:jnr-constants:0.9.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.github.jnr:jffi:1.2.10:native:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.github.jnr:jffi:1.2.10:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.datastax.cassandra:cassandra-driver-core:3.2.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.yaml:snakeyaml:1.11:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.xerial.snappy:snappy-java:1.1.1.7:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.slf4j:jcl-over-slf4j:1.7.7:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.mindrot:jbcrypt:0.3m:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.hamcrest:hamcrest-library:1.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.fusesource:sigar:1.6.4:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.eclipse.jdt.core.compiler:ecj:4.4.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.codehaus.jackson:jackson-mapper-asl:1.9.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.codehaus.jackson:jackson-core-asl:1.9.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.apache.thrift:libthrift:0.9.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.apache.commons:commons-math3:3.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.apache.commons:commons-lang3:3.4:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.apache.ant:ant-launcher:1.7.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.apache.ant:ant:1.7.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.antlr:antlr-runtime:3.5.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.antlr:antlr:3.5.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.antlr:ST4:4.0.8:jar" level="project" />
+    <orderEntry type="library" name="SBT: net.mintern:primitive:1.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: net.jpountz.lz4:lz4:1.3.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: net.java.dev.jna:jna:4.0.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: it.unimi.dsi:fastutil:6.5.7:jar" level="project" />
+    <orderEntry type="library" name="SBT: de.jflex:jflex:1.6.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: commons-codec:commons-codec:1.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: commons-cli:commons-cli:1.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.thinkaurelius.thrift:thrift-server:0.3.7:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.ning:compress-lzf:0.8.4:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.lmax:disruptor:3.0.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.googlecode.json-simple:json-simple:1.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru:1.4:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.googlecode.concurrent-trees:concurrent-trees:2.4.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.github.rholder:snowball-stemmer:1.3.0.581.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.github.jbellis:jamm:0.3.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.clearspring.analytics:stream:2.5.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.carrotsearch:hppc:0.5.4:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.boundary:high-scale-lib:1.0.6:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.addthis.metrics:reporter-config3:3.0.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.addthis.metrics:reporter-config-base:3.0.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scalactic:scalactic_2.11:2.2.4:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-lang:scala-reflect:2.11.8:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-lang:scala-library:2.11.8:jar" level="project" />
+    <orderEntry type="library" name="SBT: net.debasishg:redisclient_2.11:3.4:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.hamcrest:hamcrest-core:1.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: junit:junit:4.12:jar" level="project" />
+    <orderEntry type="library" name="SBT: aopalliance:aopalliance:1.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.google.guava:guava:19.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.google.inject:guice:4.1.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: javax.inject:javax.inject:1:jar" level="project" />
+    <orderEntry type="library" name="SBT: commons-pool:commons-pool:1.6:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.apache.cassandra:cassandra-all:3.4:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.apache.cassandra:cassandra-thrift:3.4:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.caffinitas.ohc:ohc-core:0.4.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.cassandraunit:cassandra-unit:3.0.0.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: log4j:log4j:1.2.15:jar" level="project" />
   </component>
 </module>

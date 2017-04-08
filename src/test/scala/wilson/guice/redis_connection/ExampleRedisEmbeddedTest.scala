@@ -3,7 +3,7 @@ package wilson.guice.redis_connection
 import com.google.inject.Guice
 import com.redis.RedisClient
 import org.scalatest.{BeforeAndAfterAll, FunSuite}
-import wilson.guice.redis_connection.component.IComponent
+import wilson.guice.redis_connection.component.{IComponent, RunningComponent}
 import wilson.guice.redis_connection.module.RedisEmbeddedModule
 
 /**
@@ -15,7 +15,7 @@ class ExampleRedisEmbeddedTest extends FunSuite
 
 
   private lazy val injector = Guice.createInjector(new RedisEmbeddedModule)
-  private lazy val component: IComponent = injector.getInstance(classOf[IComponent])
+  private lazy val component: RunningComponent = injector.getInstance(classOf[RunningComponent])
 
   override protected def beforeAll(): Unit = {
     client.flushall
